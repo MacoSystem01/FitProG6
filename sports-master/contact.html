@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>Contactanos | FitPro G6</title>
+      <meta name="keywords"
+         content="Pérdida de peso, Ejercicio, Entrenamiento, Fitness, Salud, Nutrición, Bienestar, Rutinas, Planes de dieta, Aplicación, Personalizado, Metas, Motivación, Control de peso, Saludable">
+      <meta name="description"
+         content="Tu compañero de ejercicio personalizado para alcanzar tus metas de pérdida de peso. Encuentra rutinas de entrenamiento efectivas y planes de alimentación saludable, todo en una sola aplicación.">
+      <meta name="author" content="ProyectInformatic G6">
+      <link rel="shortcut icon" href="/images" type="image/x-icon" />
+      <link rel="apple-touch-icon" href="/images">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/colors.css">
+      <link rel="stylesheet" href="css/versions.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/3dslider.css" />
+      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+      <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+      <script src="js/3dslider.js"></script>
+   </head>
+
+   <body class="game_info" data-spy="scroll" data-target=".header">
+
+      <div id="preloader">
+         <img class="preloader" src="https://clipart-library.com/image_gallery/n1567453.gif" alt="">
+      </div>
+
+      <section id="top">
+         <header>
+            <div class="container">
+               <div class="header-top">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="full">
+                           <div class="logo">
+                              <a href="index.html"><img src="images/logo.png" class="img-logo" /></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="right_top_section">
+                           <ul class="social-icons pull-left">
+                              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                              <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                           </ul>
+                           <ul class="login">
+                              <li class="login-modal">
+                                 <a href="login.html" class="login"><i class="fa fa-user"></i>Login</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-bottom">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="full">
+                           <div class="main-menu-section">
+                              <div class="menu">
+                                 <nav class="navbar navbar-inverse">
+                                    <div class="navbar-header">
+                                       <button class="navbar-toggle" type="button" data-toggle="collapse"
+                                          data-target=".js-navbar-collapse">
+                                          <span class="sr-only">Toggle navigation</span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                       </button>
+                                       <a class="navbar-brand" href="#">Menu</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse js-navbar-collapse">
+                                       <ul class="nav navbar-nav">
+                                          <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> INICIO</a>
+                                          </li>
+                                          <li><a href="perfil-salud.html"><i class="fa fa-heartbeat"
+                                                   aria-hidden="true"></i> Perfil de Salud</a></li>
+                                          <li><a href="informacion_nutricional.html"><i class="fa fa-cutlery"
+                                                   aria-hidden="true"></i> Información Nutricional</a></li>
+                                          <li><a href="rutina_ejercicio.html"><i class="fa fa-dribbble" aria-hidden="true"></i>
+                                                Rutina de Ejercicio</a></li>
+                                          <li><a href="contact.html"><i class="fa fa-volume-control-phone"
+                                                   aria-hidden="true"></i> Contáctanos</a></li>
+                                       </ul>
+                                    </div>
+                                 </nav>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <div class="full-slider">
+            <div id="carousel-example-generic" class="carousel slide">
+               <!-- Carousel items -->
+               <div class="carousel-inner" role="listbox">
+                  <div class="item active deepskyblue4" data-ride="carousel" data-interval="5000">
+                     <div class="carousel-caption">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                           <div class="slider-contant" data-animation="animated fadeInRight"></div>
+                        </div>
+                     </div>
+                  </div>   
+               </div>
+            </div>
+            <div class="news">
+               <div class="container">
+                  <div class="heading-slider">
+                     <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> FitPro :</p>
+                     <h1>
+                        <a href="" class="typewrite" data-period="2000"
+                           data-type='[ "Tu compañero de ejercicio personalizado para alcanzar tus metas de pérdida de peso. Todo en una sola aplicación!!."]'>
+                           <span class="wrap"></span>
+                        </a>
+                     </h1>
+                     <span class="wrap"></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="contant" class="contant main-heading team">
+         <div class="row">
+            <div class="container">
+               <div class="contact">
+                  <div class="col-md-12">
+                     <div class="map"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.9856354097697!2d-76.52556122547077!3d3.3536579518623784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1bce83eb4eb%3A0x374b9a9955d030e8!2sUniversidad%20Aut%C3%B3noma%20De%20Occidente!5e0!3m2!1ses!2sco!4v1713930661125!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="contact-info">
+                        <div class="kode-section-title">
+                           <h3>Ponte en Contacto con Nosotros!</h3>
+                        </div>
+                        <div class="kode-forminfo">
+                           <p><b>Nuestras Rutinas</b> se enmarca en un contexto volitivo, es decir determinado por la voluntad de los participantes, y como parte de un
+                           proceso de formación integral que propende por generar unas condiciones físicas favorables, que contribuyan al
+                           crecimiento personal y de calidad de vida y hábitos saludables de los miembros de la Comunidad Universitaria.</p>
+                           
+                           <ul class="kode-form-list">
+                              <li>
+                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                 <p><strong>Ubicación:</strong><a href="https://maps.app.goo.gl/nC4ftNsgth76hdZr5"> 
+                                    Calle 25, Vía Cali - Puerto Tejada #115-85 Km 2, Jamundí, Cali, Valle del Cauca</a></p>
+                              </li>
+                              <li>
+                                 <i class="fa fa-phone"></i> 
+                                 <p><strong>Contactanos:</strong> +57(2) 318 8000</p>
+                              </li>
+                              <li>
+                                 <i class="fa fa-envelope-o"></i> 
+                                 <p><strong>Correo:</strong> UAOG6@uao.edu.com</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="contact-us">
+                        <form method="post" class="comments-form" id="contactform">
+                           <p><h3>Contactate Ahora!!</h3></p>
+                           <ul>
+                              <li><input type="text" id="name" name="name" class="required" placeholder="Nombre Completo*"></li>
+                              <li><input type="text" id="email" name="email" class="required email" placeholder="Correo *"></li>
+                              <li><input type="text" name="address" id="address" placeholder="Dirección"></li>
+                              <li><textarea name="message" id="message" placeholder="Dejanos tu Mensaje..."></textarea></li>
+                              <li><input class="thbg-color" type="submit" value="Enviar"></li>
+                           </ul>
+                           <div class="hidden-me" id="contact_form_responce">
+                              <p></p>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer id="footer" class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="full">
+                     <div class="footer-widget">
+                        <div class="footer-logo">
+                           <a href="#"><img src="images/logo1.png" alt="#" /></a>
+                        </div>
+                        <p>Transforma tu cuerpo, fortalece tu mente: ¡Ejercítate con nuestra app!</p>
+                        <ul class="social-icons style-4 pull-left">
+                           <li><a class="facebook" href="https://m.facebook.com/BienestarUAO"><i class="fa fa-facebook"></i></a></li>
+                           <li><a class="twitter" href="https://twitter.com/lauao?lang=es"><i class="fa fa-twitter"></i></a></li>
+                           <li><a class="youtube" href="https://www.youtube.com/results?search_query=universidad+aut%C3%B3noma+de+occidente+cali"><i class="fa fa-youtube-play"></i></a></li>
+                           <li><a class="pinterest" href="https://co.pinterest.com/zulmauseche/fotos-uao/"><i class="fa fa-pinterest-p"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <p>Copyright © 2018 Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
+            </div>
+         </div>
+      </footer>
+      <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+      <script src="js/all.js"></script>
+
+      <script src="js/custom.js"></script>
+   </body>
+</html>
