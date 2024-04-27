@@ -156,36 +156,41 @@
                             <div class="col-lg-6">
                                 <div class="comment-box-half">
                                     <input id="name" class="form-control2" name="name" placeholder="* Nombre Completo" value="" size="30"
-                                        aria-required="true" type="text">
+                                        aria-required="true" type="text" required>
                                 </div>
                             </div>
 
 
                             <div class="col-lg-6">
                                 <div class="comment-box-half">
-                                    <input id="subject" class="form-control2" name="eags" value="" placeholder="* Edad (máx. 2 dígitos)"
-                                        maxlength="2" aria-required="true" type="number" oninput="validarEdad(this)">
+                                    <input id="edad" class="form-control2" name="edad" value="" placeholder="* Edad (máx. 2 dígitos) "
+                                        maxlength="2" aria-required="true" type="number" oninput="validarEdad(this)" required>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="comment-box-half">
-                                    <input id="subject" class="form-control2" name="genero" value="" placeholder="* Genero"
-                                        maxlength="10" aria-required="true" type="text" oninput="validarEdad(this)">
+									<label>Genero:</label>
+                                    <Select id="genero" class="form-control2" name="genero" required>
+										<option value="" selected>Seleccionar</option>									
+										<option value="masculino">Masculino</option>
+										<option value="femenino">Femenino</option>
+										<option value="otro">Otro</option>
+									</select>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="comment-box-half">
                                     <input id="estatura" class="form-control2" name="estatura" value="" placeholder="* Estatura (cm)" maxlength="4"
-                                        aria-required="true" type="number" oninput="calcularIMC()">
+                                        aria-required="true" type="number" oninput="calcularIMC()" required>
                                 </div>
                             </div>
                             
                             <div class="col-lg-6">
                                 <div class="comment-box-half">
                                     <input id="peso" class="form-control2" name="peso" value="" placeholder="* Peso kg" maxlength="3"
-                                        aria-required="true" type="number" oninput="calcularIMC()">
+                                        aria-required="true" type="number" oninput="calcularIMC()" required>
                                 </div>
                             </div>
                             
@@ -195,23 +200,6 @@
                                         type="text" readonly>
                                 </div>
                             </div>
-                            <!-- Calcular IMC -->
-                            <script>
-                                function calcularIMC() {
-                                    
-                                    var estatura = parseFloat(document.getElementById("estatura").value);
-                                    var peso = parseFloat(document.getElementById("peso").value);
-
-                                    if (!isNaN(estatura) && !isNaN(peso) && estatura > 0 && peso > 0) {
-                                        
-                                        var imc = peso / Math.pow(estatura / 100, 2); 
-
-                                        document.getElementById("imc").value = imc.toFixed(2); 
-                                    } else {
-                                        document.getElementById("imc").value = "Por favor, ingresa valores válidos";
-                                    }
-                                }
-                            </script>
 
                             <div class="col-lg-6">
                                 <div class="comment-box-half">
@@ -270,6 +258,22 @@
                                         option.text = enfermedad;
                                         enfermedadesSelect.add(option);
                                     });
+                                }
+								
+								<!-- Calcular IMC -->
+								function calcularIMC() {
+                                    
+                                    var estatura = parseFloat(document.getElementById("estatura").value);
+                                    var peso = parseFloat(document.getElementById("peso").value);
+
+                                    if (!isNaN(estatura) && !isNaN(peso) && estatura > 0 && peso > 0) {
+                                        
+                                        var imc = peso / Math.pow(estatura / 100, 2); 
+
+                                        document.getElementById("imc").value = imc.toFixed(2); 
+                                    } else {
+                                        document.getElementById("imc").value = "Por favor, ingresa valores válidos";
+                                    }
                                 }
                             </script>
 

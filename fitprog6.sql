@@ -75,3 +75,17 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para CONTACTENOS
+--
+CREATE TABLE `fitprog6`.`contactenos` ( 
+	`id` INT NOT NULL AUTO_INCREMENT , 
+	`nombre` VARCHAR(50) NOT NULL , 
+	`correo` VARCHAR(15) NOT NULL , 
+	`telefono` VARCHAR(15) NULL , 
+	`mensaje` VARCHAR(300) NOT NULL , 
+	PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
